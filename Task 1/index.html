@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherVue</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="api-info">
+        <p>Weather data provided by <a href="https://www.weatherapi.com/" target="_blank">WeatherAPI</a></p>
+    </header>
+    <div class="weather-container">
+        <div class="weather-card">
+            <div class="header-content">
+                <img src="icons/cloudy.png" alt="WeatherVue Logo" class="logo-image">
+                <h1 class="app-title">WeatherVue</h1>
+            </div>
+            <div class="search-area">
+                <input type="text" id="city-input" placeholder="Enter city name" class="input-field">
+                <button id="city-input-btn" class="submit-btn">Get Weather</button>
+            </div>
+            <div id="weather-info" class="weather-info">
+                <h3 id="city-name" class="city-name"></h3>
+                <h4 id="description" class="description"></h4>
+                <table>   
+                    <tr>
+                        <th><img src="icons/calendar.svg" alt="Date" class="logo-icon"></th>
+                        <td id="date"></td>
+                        <th><img src="icons/temperature.svg" alt="Temperature" class="logo-icon"></th>
+                        <td id="temperature"></td>
+                    </tr>
+                    <tr>
+                        <th><img src="icons/wind.svg" alt="Wind" class="logo-icon"></th>
+                        <td id="wind-speed"></td>
+                        <th><img src="icons/humidity.png" alt="Humidity" class="logo-icon"></th>
+                        <td id="humidity"></td>
+                    </tr>
+                    <tr>
+                        <th><img src="icons/dew.png" alt="Dew Point" class="logo-icon"></th>
+                        <td id="dew-point"></td>
+                        <th><img src="icons/air.png" alt="Air Pressure" class="logo-icon1"></th>
+                        <td id="pressure"></td>
+                    </tr>                  
+                    <tr>
+                        <th>Visibility:</th>
+                        <td id="visibility"></td>                  
+                        <th>Feels Like:</th>
+                        <td id="feels-like"></td>
+                    </tr>
+                </table>
+            </div>           
+        </div>
+    </div>
+    <footer>
+        <p><span id="year"></span>The displayed weather information may not be entirely accurate and should be considered as an approximate value.</p>
+        <a href="https://www.flaticon.com/free-icons/dew" title="dew icons">Dew icons created by Muhammad_Usman - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/weather" title="weather icons">Weather icons created by iconixar - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/pressure" title="pressure icons">Pressure icons created by lutfix - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/humidity" title="humidity icons">Humidity icons created by Pixel perfect - Flaticon</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
